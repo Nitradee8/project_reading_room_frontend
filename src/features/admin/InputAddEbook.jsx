@@ -7,7 +7,6 @@ export default function InputAddEbook({
     const handdleChangInput = (e) => {
         setInput({ ...input, [e.target.name]: e.target.value });
     }
-
     return (
         <div>
             <span>{title}</span>
@@ -16,7 +15,6 @@ export default function InputAddEbook({
                 type={type}
                 name="AddBook"
                 value={input?.AddBook}
-                type={type}
             />
         </div>
     )

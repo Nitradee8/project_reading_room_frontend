@@ -17,12 +17,16 @@ export default function AuthContextProvider({ children }) {
         .then((res) => {
           setAuthUser(res.data.user);
         })
+        .catch((error) => {
+          console.log(error)
+        })
         .finally(() => {
           setIsLoading(false);
         });
     } else {
       setIsLoading(false);
-    }
+      
+    } 
   }, []);
 
 

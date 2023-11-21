@@ -14,7 +14,9 @@ export default function HomePage() {
             </div>
 
             <NavBar2 />
+
             <BestSellingEbookPage />
+            
             <EbookFreePage />
 
         </>
