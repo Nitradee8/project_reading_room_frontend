@@ -16,7 +16,6 @@ export default function LoginForm() {
     const handleSubmitForm = e => {
       console.log(input)
       e.preventDefault();
-      // login(input);
       login(input).catch(err => {
         toast.error(err.response.data.message);
       }
@@ -25,7 +24,7 @@ export default function LoginForm() {
 
 
     return (
-            <form className="grid gap-10" onSubmit={handleSubmitForm}>
+            <form className="grid gap-10" onSubmit={(e)=>handleSubmitForm(e)}>
               <hr />
               <LoginInput
                 placeholder="email"

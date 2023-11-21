@@ -15,12 +15,6 @@ export default function NavBar2() {
                     <Link className="text-xl" to="แฟนตาซี">แฟนตาซี</Link>
                 </div>
                 <div className="flex gap-2">
-                    <Link className="text-xl" to="จีนย้อนยุค">จีนย้อนยุค</Link>
-                </div>
-                <div className="flex gap-2">
-                    <Link className="text-xl" to="รักหวานแหวว">รักหวานแหวว</Link>
-                </div>
-                <div className="flex gap-2">
                     <Link className="text-xl" to="กำลังภายใน">กำลังภายใน</Link>
                 </div>
             </div>
