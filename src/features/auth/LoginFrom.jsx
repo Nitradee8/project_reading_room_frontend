@@ -2,7 +2,7 @@ import { useState } from "react";
 import LoginInput from "./LoginInput";
 import LoginButton from "./LoginButton";
 import { toast } from "react-toastify";
-import { useAuth } from "../../hook/use-auth";
+import { useAuth } from "../../hooks/use-auth";
 
 
 export default function LoginForm() {

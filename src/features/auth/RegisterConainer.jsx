@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Modal from "../../component/Modal";
+import Modal from "../../components/Modal";
 import RegisterForm from "../auth/RegisterFrom";
 
 export default function RegisterContainer() {

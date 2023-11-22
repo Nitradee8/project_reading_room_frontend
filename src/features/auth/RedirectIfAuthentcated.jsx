@@ -1,6 +1,6 @@
 // redirect หน้า login (เมื่อ User ทำการ login อยู่ ไม่ควรจะไปหน้า login ได้)
 import { Navigate } from "react-router-dom";
-import { useAuth } from "../../hook/use-auth";
+import { useAuth } from "../../hooks/use-auth";
 
 
 export default function RedirectIfAuthentcated({children}) {

@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import RegisterInput from "./RegisterInput";
 import Joi from 'joi';
 import InputErrorMessage from "./InputErrorMessage";
-import { useAuth } from "../../hook/use-auth";
+import { useAuth } from "../../hooks/use-auth";
 
 
 
