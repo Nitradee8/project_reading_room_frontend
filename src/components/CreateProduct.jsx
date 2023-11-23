@@ -1,9 +1,9 @@
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import axios from '../config/axios';
 import { useState } from 'react';
 
-export default function CreateProduct() {
-    const navigate = useNavigate();
+export default function CreateProduct({setMode}) {
+    // const navigate = useNavigate();
 
     const [input, setInput] = useState({
         
@@ -16,16 +16,21 @@ export default function CreateProduct() {
     });
 
     const handleSubmitForm = async (e) => {
-        e.preventDefault();
-        const formData = new FormData();
-        for (let key in input) {
-            formData.append(key, input[key]);
+        try {
+            
+            e.preventDefault();
+            const formData = new FormData();
+            for (let key in input) {
+                formData.append(key, input[key]);
+            }
+            
+            const newProduct = await axios.post("/product/createproduct", formData);
+            console.log(newProduct, "product");
+            setMode("AllProduct")
+          
+        } catch (error) {
+            console.log(error)
         }
-
-        const newProduct = await axios.post("/product/createproduct", formData);
-        console.log(newProduct, "product");
-
-        navigate("/")
     };
 
     return (

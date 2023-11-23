@@ -19,7 +19,7 @@ export default function AdminPage() {
           </div>
         </div>
         <div className="w-full">
-          <div className="flex w-full justify-center items-center">{mode === "CreateProduct" ? <CreateProduct /> : ""}</div>
+          <div className="flex w-full justify-center items-center">{mode === "CreateProduct" ? <CreateProduct setMode={setMode} /> : ""}</div>
           <div className="flex w-full justify-center items-center">{mode === "AllProduct" ? <AllProduct /> : ""}</div>
         </div>
       </div>

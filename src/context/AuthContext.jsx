@@ -28,6 +28,7 @@ export default function AuthContextProvider({ children }) {
       
     } 
   }, []);
+  console.log(authUser)
 
 
   const login = async credential => {
