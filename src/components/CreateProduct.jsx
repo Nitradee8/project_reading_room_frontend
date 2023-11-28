@@ -6,9 +6,9 @@ export default function CreateProduct({setMode}) {
     // const navigate = useNavigate();
 
     const [input, setInput] = useState({
-        
         categoryId: "",
         bookname: "",
+        content: "",
         price: "",
         description: "",
         image: "",
@@ -35,10 +35,10 @@ export default function CreateProduct({setMode}) {
 
     return (
         <>
-            <div className="flex flex-col justify-center items-center rounded-lg bg-slate-400 w-[700px] h-[500px]">
+            <div className="flex flex-col justify-center items-center rounded-lg bg-gray-400 w-[700px] h-[500px]">
                 <div className="flex flex-col gap-8 w-[600px]">
                     <div className="text-center">
-                        <p className="flex text-white font-mono">Create Product</p>
+                        <p className="flex text-white font-extrabold text-[30px] justify-center">Create Product</p>
                     </div>
                     <input
                         type="text"
@@ -50,24 +50,35 @@ export default function CreateProduct({setMode}) {
                     <input
                         type="text"
                         onChange={(e) => setInput({ ...input, categoryId: e.target.value })}
+                        value={input.categoryId}
                         placeholder="Category"
                     />
 
                     <input
                         type="text"
                         onChange={(e) => setInput({ ...input, description: e.target.value })}
+                        value={input.description}
                         placeholder="Description"
                     />
 
                     <input
                         type="text"
                         onChange={(e) => setInput({ ...input, authorId: e.target.value })}
+                        value={input.authorId}
                         placeholder="Author"
                     />
 
                     <input
                         type="text"
+                        onChange={(e) => setInput({ ...input, content: e.target.value })}
+                        value={input.content}
+                        placeholder="Content"
+                    />
+
+                    <input
+                        type="text"
                         onChange={(e) => setInput({ ...input, price: e.target.value })}
+                        value={input.price}
                         placeholder="Price"
                     />
 

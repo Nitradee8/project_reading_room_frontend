@@ -28,7 +28,6 @@ export default function AllProduct() {
         axios.get('/product/allproduct').then((res) => setAllProduct(res.data.allProduct))
     }
 
-
     return (
         <div className="grid grid-cols-2 gap-6">
             {allProduct.map((el) => (

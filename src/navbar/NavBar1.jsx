@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../hooks/use-auth";
+import { useNavigate } from "react-router-dom";
+
 
 export default function NavBar1() {
     const { authUser, logout } = useAuth();
@@ -8,14 +10,22 @@ export default function NavBar1() {
         logout()
     }
 
+    const navigate = useNavigate();
+
+    const readingRoom = () => {
+        navigate("/")
+    }
+
     return (
         <div className="flex bg-amber-300 justify-between px-5 p-2.5">
             <div className="flex">
-                <h1 className="btn btn-ghost normal-case text-xl">Reading Room</h1>
+                <h1 className="btn btn-ghost normal-case text-xl" onClick={readingRoom}>Reading Room</h1>
+
             </div>
 
-            <div className="flex gap-6 justify-end items-center">
-                {/* <Link className="text-xl" to="ชั้นวางหนังสือ">ชั้นวางหนังสือ</Link> */}
+            <div className="flex gap-4 justify-end items-center">
+                <img src="/src/assets/Bookshelf.png"className="w-12" />
+                <Link className="text-xl font-bold" to="BookshelfPage">ชั้นวางหนังสือ</Link>
 
                 <div className="flex gap-4 bg-white rounded-lg">
                     <div className="input-group flex justify-items-start">

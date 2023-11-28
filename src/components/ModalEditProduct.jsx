@@ -6,7 +6,7 @@ import axios from "../config/axios";
 
 export default function ModalEditProduct({
 
-    open, el, setIsOpen, bookName, description, price, setAllProduct, bookId,getProduct
+    open, el, setIsOpen, bookName, description, price, setAllProduct, bookId, getProduct
 }) {
     // console.log(el)
 
