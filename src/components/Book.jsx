@@ -21,7 +21,7 @@ export default function Book() {
     }
     console.log(allData)
     return (
-        <div>
+        <div >
             <div className="grid grid-row gap-10  px-52 py-40">
                 <img src={allData.image} className="flex border-box w-[350px] h-[500px]" />
                 <div className="flex flex-col gap-10 p-10">

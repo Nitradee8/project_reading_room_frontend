@@ -12,6 +12,7 @@ export default function AllProduct() {
     const [bookId,setBookId] = useState(null)
     
 
+    console.log(allProduct)
     const handleCilckDelete = async (id) => {
         try {
             await axios.delete(`/product/delete/${id}`);

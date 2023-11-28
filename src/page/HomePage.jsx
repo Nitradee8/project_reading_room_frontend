@@ -1,7 +1,7 @@
 
 import ProductUser from "../components/ProductUser";
 import NavBar2 from "../navbar/NavBar2";
-import BestSellingEbookPage from "./BestSellingEbookPage";
+// import BestSellingEbookPage from "./BestSellingEbookPage";
 
 
 export default function HomePage() {
@@ -14,7 +14,7 @@ export default function HomePage() {
             </div>
 
             <NavBar2 />
-            <BestSellingEbookPage />
+            {/* <BestSellingEbookPage /> */}
             <ProductUser />
         </>
     )

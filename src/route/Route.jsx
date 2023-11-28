@@ -26,7 +26,6 @@ const router = createBrowserRouter([
             { path: 'bestSelling/bestSellingId', element: <BestSellingEbookPage /> },
             { path: 'ebookFree/:ebookFreeId', element: <EbookFreePage /> },
             { path: 'admin', element: <AdminPage /> },
-            // { path: 'admin', element: <AdminPage /> },
         ]
     },
 
